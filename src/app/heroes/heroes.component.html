@@ -1,0 +1,12 @@
+<div fxLayout='column' fxLayoutGap='20px'  fxFlex='40%'>
+    <div class='head'>
+        My Heroes
+    </div>
+    <div *ngFor="let item of data" class='hero' fxLayout='column' fxLayoutAlign='center start'
+        fxLayoutGap='10px' [routerLink]='["/edit/"+item.id]'>
+        <div fxLayout='row'>
+            <div class="number">{{item.id}}</div>
+            <div class="name">{{item.name}}</div>
+        </div>
+    </div>
+</div>

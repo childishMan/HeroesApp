@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+body {
+    margin: 0;
+}
+
+.link {
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: brown;
+}
+
+.link.active {
+    font-weight: bold;
+    text-decoration: none;
+    color: brown;
+}

@@ -1,0 +1,19 @@
+.block {
+    width: 140px;
+    height: 80px;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    color: brown;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.13);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.13);
+}
+
+.block:hover{
+    background-color: whitesmoke;
+    transition-duration: 0.5s;
+}
+
+.block:focus{
+    outline: none;
+}

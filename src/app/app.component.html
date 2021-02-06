@@ -1,0 +1,15 @@
+<div fxLayout='column' fxLayoutGap='30px'>
+  <div class="header" fxFlex='100' fxLayoutAlign='space-between center' fxLayoutAlign.xs='center' fxLayout.xs="column"
+    fxLayoutGap='20px'>
+    <div class="logo">
+      HEREOS APP
+    </div>
+    <div class='navigation' fxLayoutGap='20px' fxLayout='row' fxLayout.xs="column">
+      <a class='link' [routerLink]='["dashboard"]' routerLinkActive='active'>Dashboard</a>
+      <a class='link' [routerLink]='["heroes"]' [routerLinkActive]='["active"]'>Heroes</a>
+    </div>
+  </div>
+  <div class='content' ngClass.gt-xs='bigscreen'>
+    <router-outlet></router-outlet>
+  </div>
+</div>

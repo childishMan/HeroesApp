@@ -1,0 +1,6 @@
+<div fxLayout='row' fxFill fxLayoutGap='20px' fxLayoutAlign='center'>
+    <div *ngFor="let item of data" class='block' fxLayout='row' fxLayoutAlign='center center'
+        [routerLink]='["/edit/"+item.id]'>
+        {{item.name}}
+    </div>
+</div>

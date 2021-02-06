@@ -1,0 +1,32 @@
+.head {
+    font-size: 18px;
+}
+
+.hero {
+    border-radius: 10px 10px;
+    background-color: white;
+    cursor: pointer;
+    -webkit-box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.13);
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.13);
+
+    .number {
+        padding: 10px;
+        background-color: brown;
+        color: white;
+        border-radius: 10px 0 0 10px;
+    }
+
+    .name {
+        color: brown;
+        padding: 10px;
+    }
+}
+
+.hero:focus {
+    outline: none;
+}
+
+.hero:hover {
+    background-color: whitesmoke;
+    transition-duration: 0.5s;
+}

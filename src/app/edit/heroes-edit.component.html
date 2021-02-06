@@ -1,0 +1,16 @@
+<div fxLayout='column' fxLayoutGap='15px'>
+    <div class='main-name'>
+        {{hero.name}}
+    </div>
+    <div fxLayout='row' fxLayoutGap='10px'>
+        <span class='name'>Id:</span>
+        {{hero.id}}
+    </div>
+    <div fxLayout='row' fxLayoutGap='10px'>
+        <span class='name'>Name:</span>
+        <input type="text" [(ngModel)]='hero.name' [minLength]='1'>
+    </div>
+    <div fxLayout='row'>
+        <button (click)='back()' [disabled]='hero.name.length <1'>Back</button>
+    </div>
+</div>
